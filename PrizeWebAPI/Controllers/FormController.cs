@@ -17,6 +17,7 @@ using AutoMapper;
 using Core.Entities;
 using Core.Enums;
 using Core.Interfaces;
+using Infrastructure.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PrizeWebAPI.Models;
@@ -952,7 +953,6 @@ namespace PrizeWebAPI.Controllers
                         Message = "Unauthorized Access"
                     });
                 }
-
                 bool deleted = await _deleteFormSubmissionHandler.HandleAsync(submissionId);
                 if (!deleted)
                 {

@@ -24,6 +24,8 @@ namespace Infrastructure.Repositories
         public async Task<bool> IsAdmin(string userId)
         {
             if (string.IsNullOrWhiteSpace(userId)) return false;
+            if (!userId.StartsWith("u", StringComparison.OrdinalIgnoreCase))
+                userId = "u" + userId;
             return await _context.Set<AdminUser>().AnyAsync(a => a.UserId == userId);
         }
 
