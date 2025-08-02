@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+    <Compile Remove="Configuration\V_UsersWithDeviceConfiguration.cs" />
+    <Compile Remove="Migrations\20250526122019_InitialCreate.cs" />
+    <Compile Remove="Migrations\20250526122019_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20250530125202_UpdateEmptyQuestionTitles.cs" />
+    <Compile Remove="Migrations\20250530125202_UpdateEmptyQuestionTitles.Designer.cs" />
+    <Compile Remove="Migrations\20250531133244_UpdateColumnTypeForUserIdInFormSubmission.cs" />
+    <Compile Remove="Migrations\20250531133244_UpdateColumnTypeForUserIdInFormSubmission.Designer.cs" />
+    <Compile Remove="Migrations\20250601090625_UpdateColumnTypeForDepartmentIdInFormSubmission.cs" />
+    <Compile Remove="Migrations\20250601090625_UpdateColumnTypeForDepartmentIdInFormSubmission.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>

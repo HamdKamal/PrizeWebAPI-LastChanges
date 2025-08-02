@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Features\Forms\DepartmentForm\**" />
+    <Compile Remove="Features\Forms\IndividualForm\**" />
+    <Compile Remove="Features\Forms\Queries\GetNewDepartmentForm\**" />
+    <Compile Remove="Features\Forms\Queries\GetNewIndividualForm\**" />
+    <Compile Remove="Features\IndividualForm\**" />
+    <Compile Remove="Queries\**" />
+    <EmbeddedResource Remove="Features\Forms\DepartmentForm\**" />
+    <EmbeddedResource Remove="Features\Forms\IndividualForm\**" />
+    <EmbeddedResource Remove="Features\Forms\Queries\GetNewDepartmentForm\**" />
+    <EmbeddedResource Remove="Features\Forms\Queries\GetNewIndividualForm\**" />
+    <EmbeddedResource Remove="Features\IndividualForm\**" />
+    <EmbeddedResource Remove="Queries\**" />
+    <None Remove="Features\Forms\DepartmentForm\**" />
+    <None Remove="Features\Forms\IndividualForm\**" />
+    <None Remove="Features\Forms\Queries\GetNewDepartmentForm\**" />
+    <None Remove="Features\Forms\Queries\GetNewIndividualForm\**" />
+    <None Remove="Features\IndividualForm\**" />
+    <None Remove="Queries\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+</Project>
