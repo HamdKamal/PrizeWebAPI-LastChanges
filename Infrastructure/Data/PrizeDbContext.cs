@@ -382,7 +382,8 @@ public class PrizeDbContext(DbContextOptions<PrizeDbContext> options) : DbContex
             new Status { Id = 5, Name = "Accepted", isActive = true, isDeleted = false, CreatedAt = new DateTime(2025, 06, 25, 14, 01, 00), CreatedBy = "System", LastModifiedAt = new DateTime(2025, 06, 25, 14, 01, 00), LastModifiedBy = "System" },
             new Status { Id = 6, Name = "Denied", isActive = true, isDeleted = false, CreatedAt = new DateTime(2025, 06, 25, 14, 01, 00), CreatedBy = "System", LastModifiedAt = new DateTime(2025, 06, 25, 14, 01, 00), LastModifiedBy = "System" },
             new Status { Id = 7, Name = "Expired Without Modification", isActive = true, isDeleted = false, CreatedAt = new DateTime(2025, 06, 25, 14, 01, 00), CreatedBy = "System", LastModifiedAt = new DateTime(2025, 06, 25, 14, 01, 00), LastModifiedBy = "System" },
-            new Status { Id = 8, Name = "Reapply", isActive = true, isDeleted = false, CreatedAt = new DateTime(2025, 06, 25, 14, 01, 00), CreatedBy = "System", LastModifiedAt = new DateTime(2025, 06, 25, 14, 01, 00), LastModifiedBy = "System" }
+            new Status { Id = 8, Name = "Reapply", isActive = true, isDeleted = false, CreatedAt = new DateTime(2025, 06, 25, 14, 01, 00), CreatedBy = "System", LastModifiedAt = new DateTime(2025, 06, 25, 14, 01, 00), LastModifiedBy = "System" },
+            new Status { Id = 9, Name = "DeletedByUser", isActive = true, isDeleted = false, CreatedAt = new DateTime(2025, 06, 25, 14, 01, 00), CreatedBy = "System", LastModifiedAt = new DateTime(2025, 06, 25, 14, 01, 00), LastModifiedBy = "System" }
         );
     
 
